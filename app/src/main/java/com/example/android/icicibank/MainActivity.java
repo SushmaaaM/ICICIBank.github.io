@@ -18,15 +18,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ourBrow = (WebView) findViewById(R.id.webView);
+        ourBrow = findViewById(R.id.webView);
         ourBrow.getSettings().setJavaScriptEnabled(true);
         ourBrow.setWebViewClient(new MyBrowser());
         ourBrow.loadUrl("https://www.icicibank.com/");
 
-        // ATTENTION: This was auto-generated to handle app links.
-        Intent appLinkIntent = getIntent();
-        String appLinkAction = appLinkIntent.getAction();
-        Uri appLinkData = appLinkIntent.getData();
+        // Handle the app link intent
+        handleIntent(getIntent());
+    }
+
+    private void handleIntent(Intent intent) {
+        Uri appLinkData = intent.getData();
+        if (appLinkData != null) {
+            // Extract the URL from the intent data
+            String url = appLinkData.toString();
+            // Load the URL in the WebView
+            ourBrow.loadUrl(url);
+        }
     }
 
     private static class MyBrowser extends WebViewClient {
