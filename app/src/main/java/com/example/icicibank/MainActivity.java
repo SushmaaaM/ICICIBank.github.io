@@ -29,12 +29,12 @@ public class MainActivity extends AppCompatActivity {
         handleIntent();
     }
 
-    @Override
-    protected void onNewIntent(Intent intent) {
-        super.onNewIntent(intent);
-        setIntent(intent);
-        handleIntent();
-    }
+//    @Override
+//    protected void onNewIntent(Intent intent) {
+//        super.onNewIntent(intent);
+//        setIntent(intent);
+//        handleIntent();
+//    }
 
     private void handleIntent() {
         Intent appLinkIntent = getIntent();
