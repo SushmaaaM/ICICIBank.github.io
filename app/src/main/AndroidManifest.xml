@@ -14,9 +14,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IciciBank"
         tools:targetApi="31">
-        <meta-data
-            android:name="asset_statements"
-            android:resource="@string/asset_statements" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -29,11 +26,15 @@
             <meta-data
                 android:name=".MainActivity"
                 android:value="" />
-            <intent-filter>
+            <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="https" android:host="sushmaaam.github.io" android:pathPrefix="/ICICIBank.github.io/" />
+
+                <data android:scheme="http" />
+                <data android:host="sushmaaam.github.io" />
+                <data android:pathPrefix="/ICICIBank.github.io/" />
             </intent-filter>
         </activity>
     </application>
