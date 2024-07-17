@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">IciciBank</string>
+    <string name="asset_statements" translatable="false">[{ \"include\": \"https://sushmaaam.github.io/.well-known/assetlinks.json\" }]</string>
 </resources>

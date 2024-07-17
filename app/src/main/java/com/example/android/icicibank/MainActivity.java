@@ -1,4 +1,4 @@
-package com.example.icicibank;
+package com.example.android.icicibank;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import com.example.android.icicibank.R;
 
 public class MainActivity extends AppCompatActivity {
     private WebView ourBrow;
