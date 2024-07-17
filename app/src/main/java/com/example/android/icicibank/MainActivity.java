@@ -25,10 +25,6 @@ public class MainActivity extends AppCompatActivity {
         Intent appLinkIntent = getIntent();
         String appLinkAction = appLinkIntent.getAction();
         Uri appLinkData = appLinkIntent.getData();
-        if (appLinkData != null) {
-            String url = appLinkData.toString();
-            ourBrow.loadUrl(url);
-        }
     }
 
     private static class MyBrowser extends WebViewClient {
