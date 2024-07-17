@@ -24,7 +24,7 @@
             </intent-filter>
 
             <meta-data
-                android:name="android.app.lib_name"
+                android:name=".MainActivity"
                 android:value="" />
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
