@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error) {
-            Toast.makeText(view.getContext(), "Failed to load webpage: " + error.getDescription(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(view.getContext(), "Failed to load webpage: " , Toast.LENGTH_SHORT).show();
         }
     }
 }
